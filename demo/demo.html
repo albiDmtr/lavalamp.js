@@ -1,0 +1,88 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<div class="content-area dark">
+    <div class="container">
+        <div class="element dark-el" data-lavalamp-color="#ff0000" data-lavalamp-bg="false">
+            <h4>This is an element using lavalamp.js</h4>
+            <h6>Lavalamp.js creates colorful flowing animations without WebGL</h6>
+        </div>
+
+        <div class="element dark-el" data-lavalamp-color="#00ff00" data-lavalamp-bg="false">
+            <h4>You can change the color of the animation</h4>
+            <h6>By setting the HTML attribute data-lavalamp-color to a specific HEX code</h6>
+        </div>
+
+        <div class="element dark-el" data-lavalamp-color="#0000ff" data-lavalamp-bg="true">
+            <h4>...and also set a background.</h4>
+            <h6>Try setting the HTML attribute data-lavalamp-bg to true</h6>
+        </div>
+    </div>
+</div>
+<div class="content-area bright">
+    <div class="container">
+        <div class="element bright-el" data-lavalamp-color="#ff0000" data-lavalamp-bg="false">
+            <h4>This is an element using lavalamp.js</h4>
+            <h6>Lavalamp.js creates colorful flowing animations without WebGL</h6>
+        </div>
+
+        <div class="element bright-el" data-lavalamp-color="#00ff00" data-lavalamp-bg="false">
+            <h4>You can change the color of the animation</h4>
+            <h6>By setting the HTML attribute data-lavalamp-color to a specific HEX code</h6>
+        </div>
+
+        <div class="element bright-el" data-lavalamp-color="#0000ff" data-lavalamp-bg="true">
+            <h4>...and also set a background.</h4>
+            <h6>Try setting the HTML attribute data-lavalamp-bg to true</h6>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    .content-area {
+        width:100vw;
+        height:auto;
+    }
+    .dark {
+        background-color:rgb(5,5,10);
+        position: fixed;
+        top:0;
+        right:0;
+    }
+    .bright {
+        background-color:rgb(250,250,250);
+        position: fixed;
+        top:380px;
+        right:0;
+    }
+    .container {
+        padding: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .element {
+        width: 150px;
+        height: 200px;
+        margin:10px;
+        background-size: cover;
+        padding: 20px;
+        border-radius:3px;
+        transition: 0.3s;
+        padding-top:20px;
+    }
+    .dark-el {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        color:rgb(250,250,250);
+    }
+    .bright-el {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+        color:rgb(30,30,30);
+    }
+</style>
+<script src="../lavalamp.js"></script>
