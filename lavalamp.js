@@ -69,7 +69,7 @@ function generateLavaLamp(item) {
     // color
     cont.style.backgroundColor = item.dataset.lavalampColor;
     const baseColor = rgbToHsl(getRGB(cont.style.backgroundColor));
-    if (item.dataset.lavalampBg != 'false') {
+    if (item.dataset.lavalampBg == 'true') {
         cont.style.background = 'hsl(' + 360*baseColor[0] + ', 50%, 40%)';
     } else {
         cont.style.backgroundColor = 'transparent';
